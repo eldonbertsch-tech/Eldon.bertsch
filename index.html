@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>In The Hole Brat — Dive Shop</title>
+  <meta name="description" content="In The Hole Brat — local dive shop: dive trips, lessons, gear & service" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#">In The Hole Brat</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#trips">Trips</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>In The Hole Brat</h1>
+          <p class="lead">Local dive shop — guided trips, certification, gear & friendly service.</p>
+          <p>
+            <a class="btn primary" href="#trips">View Trips</a>
+            <a class="btn ghost" href="#contact">Book a Trip</a>
+          </p>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Decorative wave/graphic; replace with an image if you like -->
+          <div class="wave"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trips" class="container trips">
+      <h2>Featured Trips</h2>
+      <p class="muted">Small groups, local reefs and wrecks — morning & afternoon trips available.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Shallow Reef Intro</h3>
+          <p class="muted">Ideal for first-time snorkelers and new divers. 2-hour guided trip.</p>
+          <p class="card-meta">Duration: 2 hrs · Price: $55</p>
+          <p><a class="btn" href="#contact" data-trip="Shallow Reef Intro">Book</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Wreck Explorer</h3>
+          <p class="muted">For certified divers: explore a local wreck with an experienced guide.</p>
+          <p class="card-meta">Duration: 4 hrs · Price: $120</p>
+          <p><a class="btn" href="#contact" data-trip="Wreck Explorer">Book</a></p>
+        </article>
+
+        <article class="card">
+          <h3>Night Dive</h3>
+          <p class="muted">See nocturnal marine life — requires prior certification or guided intro.</p>
+          <p class="card-meta">Duration: 2.5 hrs · Price: $95</p>
+          <p><a class="btn" href="#contact" data-trip="Night Dive">Book</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Services & Gear</h2>
+      <div class="grid">
+        <div class="feature">
+          <h4>Courses & Certification</h4>
+          <p class="muted">PADI/SSI courses from beginner to advanced, equipment included for training.</p>
+        </div>
+        <div class="feature">
+          <h4>Equipment Rental & Sales</h4>
+          <p class="muted">Full rental kits and a curated selection of masks, regulators, wetsuits & more.</p>
+        </div>
+        <div class="feature">
+          <h4>Boat & Gear Service</h4>
+          <p class="muted">Maintenance, regulator servicing, and boat hire coordination.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About Us</h2>
+      <p>In The Hole Brat is a community-minded dive shop focused on safe, fun, and environmentally responsible diving. Local guides, small groups, and flexible scheduling.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact & Booking</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p><strong>Address:</strong> 123 Shoreline Way</p>
+          <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567‑890</a></p>
+          <p><strong>Email:</strong> <a href="mailto:hello@intheholebrat.example">hello@intheholebrat.example</a></p>
+          <p class="muted">Open daily — trips depart at 08:00 and 13:00 unless otherwise scheduled.</p>
+        </div>
+
+        <form id="booking-form" class="booking-form" aria-label="Booking form">
+          <label>
+            Full name
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+
+          <label>
+            Trip
+            <select name="trip" required>
+              <option value="">Select a trip</option>
+              <option>Shallow Reef Intro</option>
+              <option>Wreck Explorer</option>
+              <option>Night Dive</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred date
+            <input type="date" name="date" required />
+          </label>
+
+          <label>
+            Passengers
+            <input type="number" name="people" min="1" value="1" required />
+          </label>
+
+          <label>
+            Notes (medical / experience)
+            <textarea name="notes" rows="3"></textarea>
+          </label>
+
+          <button type="submit" class="btn primary">Send Booking Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>&copy; <span id="year"></span> In The Hole Brat — Dive Shop</p>
+      <p class="muted">Made with saltwater and care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
